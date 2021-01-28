@@ -1,0 +1,61 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Minecraft Client (:fabric)",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/run",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "net.fabricmc.devlaunchinjector.Main",
+      "vmArgs": "-Dfabric.dli.config\u003dC:\\Users\\natan\\Desktop\\architectury-example-mod\\fabric\\.gradle\\loom-cache\\launch.cfg -Dfabric.dli.env\u003dclient -Dfabric.dli.main\u003dnet.fabricmc.loader.launch.knot.KnotClient",
+      "args": "",
+      "env": {},
+      "preLaunchTask": "generated_Minecraft Client (:fabric)"
+    },
+    {
+      "type": "java",
+      "name": "Minecraft Server (:fabric)",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/run",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "net.fabricmc.devlaunchinjector.Main",
+      "vmArgs": "-Dfabric.dli.config\u003dC:\\Users\\natan\\Desktop\\architectury-example-mod\\fabric\\.gradle\\loom-cache\\launch.cfg -Dfabric.dli.env\u003dserver -Dfabric.dli.main\u003dnet.fabricmc.loader.launch.knot.KnotServer",
+      "args": "nogui ",
+      "env": {},
+      "preLaunchTask": "generated_Minecraft Server (:fabric)"
+    },
+    {
+      "type": "java",
+      "name": "Minecraft Client (:forge)",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/run",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "net.fabricmc.devlaunchinjector.Main",
+      "vmArgs": "-Dfabric.dli.config\u003dC:\\Users\\natan\\Desktop\\architectury-example-mod\\forge\\.gradle\\loom-cache\\launch.cfg -Dfabric.dli.env\u003dclient -Dfabric.dli.main\u003dnet.minecraftforge.userdev.LaunchTesting",
+      "args": "",
+      "env": {
+        "MOD_CLASSES": "main_ef22c57%%C:\\Users\\natan\\Desktop\\architectury-example-mod\\forge\\build\\resources\\main;main_ef22c57%%C:\\Users\\natan\\Desktop\\architectury-example-mod\\forge\\build\\classes\\java\\main"
+      },
+      "preLaunchTask": "generated_Minecraft Client (:forge)"
+    },
+    {
+      "type": "java",
+      "name": "Minecraft Server (:forge)",
+      "request": "launch",
+      "cwd": "${workspaceFolder}/run",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "mainClass": "net.fabricmc.devlaunchinjector.Main",
+      "vmArgs": "-Dfabric.dli.config\u003dC:\\Users\\natan\\Desktop\\architectury-example-mod\\forge\\.gradle\\loom-cache\\launch.cfg -Dfabric.dli.env\u003dserver -Dfabric.dli.main\u003dnet.minecraftforge.userdev.LaunchTesting",
+      "args": "nogui ",
+      "env": {
+        "MOD_CLASSES": "main_ce0d1e2%%C:\\Users\\natan\\Desktop\\architectury-example-mod\\forge\\build\\resources\\main;main_ce0d1e2%%C:\\Users\\natan\\Desktop\\architectury-example-mod\\forge\\build\\classes\\java\\main"
+      },
+      "preLaunchTask": "generated_Minecraft Server (:forge)"
+    }
+  ]
+}
